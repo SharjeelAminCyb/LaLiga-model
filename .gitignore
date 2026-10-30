@@ -1,0 +1,7 @@
+# Data som noteboken lager selv
+*.csv
+
+# Filer som Jupyter og Python lager automatisk
+.ipnyb_checkpoints/
+__pycache__/
+
