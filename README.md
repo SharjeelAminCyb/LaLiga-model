@@ -10,8 +10,8 @@ Prosjektet bygger på det jeg har lært i fagene Data Collection and Analysis og
 - [x] Manuell datarensing i ren Python, uten pandas
 - [x] Utforskende analyse og visualisering
 - [x] Feature engineering: form fra de 5 siste kampene
-- [ ] Modeller: logistisk regresjon og KNN
-- [ ] Spå kommende kamper
+- [x] Første modell: logistik regresjin (50,1% accuracy mot baseline 48,5%)
+- [ ] KNN til sammenligning
 
 ## Data
 
@@ -22,7 +22,7 @@ Kampdata fra [football-data.co.uk](https://www.football-data.co.uk/spainm.php), 
 - Hjemmelaget vinner 45,7 % av kampene. Det er baselinen modellen må slå.
 - Uten publikum (koronaperioden) falt andelen hjemmeseire fra 46,3 % til 41,4 %.
 - Skudd på mål henger dobbelt så sterkt sammen med mål som skudd totalt (korrelasjon 0,58 mot 0,29).
-
+- Logistikk regresjon treffer 50,1% på sesonger 2025/26, mot 48,5% for å alltid gjette hjemmeseier. Modellen gjetter nesten aldri uavgjort.
 ## Kjør selv
 
     pip install requests beautifulsoup4 pandas matplotlib scikit-learn
